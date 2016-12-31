@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <script src ="http://code.jquery.com/jquery-2.1.3.min.js"> </script>
+    <script src = "validate.js"> </script>
+    <script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("input").css("color", "yellow");
+    });
+});
+</script>
+  </head>
+
+ <body>
+   <main>
+    <form id = "name_form" action ="lab5.html" method ="get">
+      <label for="first_name">First Name:</label>
+      <input type="text" id="first_name" name="first_name">
+      <span id ="first_name_error" style="color:red">*</span>
+
+      <label for="last_name">Last Name:</label>
+      <input type="text" id="last_name" name="last_name">
+      <span id ="last_name_error" style="color:red">*</span>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email">
+      <span id ="email_error" style ="color:red">*</span>
+
+      <input type="button" id="join_list" value="Join our List">
+    </form>
+
+
+        <div id ="myDynamicTable">
+
+
+        </div>
+  </main>
+ </body>
+</html>
